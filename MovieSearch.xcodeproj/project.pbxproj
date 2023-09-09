@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		542A25A72AAC0573006D62A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25A62AAC0573006D62A2 /* AppDelegate.m */; };
 		542A25AA2AAC0573006D62A2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25A92AAC0573006D62A2 /* SceneDelegate.m */; };
-		542A25AD2AAC0573006D62A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25AC2AAC0573006D62A2 /* ViewController.m */; };
+		542A25AD2AAC0573006D62A2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25AC2AAC0573006D62A2 /* MainViewController.m */; };
 		542A25B02AAC0573006D62A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542A25AE2AAC0573006D62A2 /* Main.storyboard */; };
 		542A25B22AAC0574006D62A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542A25B12AAC0574006D62A2 /* Assets.xcassets */; };
 		542A25B52AAC0574006D62A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542A25B32AAC0574006D62A2 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,10 @@
 		542A25C22AAC0575006D62A2 /* MovieSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25C12AAC0575006D62A2 /* MovieSearchTests.m */; };
 		542A25CC2AAC0575006D62A2 /* MovieSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25CB2AAC0575006D62A2 /* MovieSearchUITests.m */; };
 		542A25CE2AAC0575006D62A2 /* MovieSearchUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25CD2AAC0575006D62A2 /* MovieSearchUITestsLaunchTests.m */; };
+		542A25DE2AAC085F006D62A2 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25DD2AAC085F006D62A2 /* MainViewModel.m */; };
+		542A25E22AAC0A8D006D62A2 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25E12AAC0A8D006D62A2 /* APIService.m */; };
+		542A25E62AAC163D006D62A2 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25E52AAC163D006D62A2 /* Movie.m */; };
+		542A25E92AAC2159006D62A2 /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A25E82AAC2158006D62A2 /* APIConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +46,8 @@
 		542A25A62AAC0573006D62A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		542A25A82AAC0573006D62A2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		542A25A92AAC0573006D62A2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		542A25AB2AAC0573006D62A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		542A25AC2AAC0573006D62A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		542A25AB2AAC0573006D62A2 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		542A25AC2AAC0573006D62A2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		542A25AF2AAC0573006D62A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		542A25B12AAC0574006D62A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542A25B42AAC0574006D62A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,14 @@
 		542A25C72AAC0575006D62A2 /* MovieSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		542A25CB2AAC0575006D62A2 /* MovieSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieSearchUITests.m; sourceTree = "<group>"; };
 		542A25CD2AAC0575006D62A2 /* MovieSearchUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieSearchUITestsLaunchTests.m; sourceTree = "<group>"; };
+		542A25DC2AAC085F006D62A2 /* MainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
+		542A25DD2AAC085F006D62A2 /* MainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
+		542A25E02AAC0A8D006D62A2 /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		542A25E12AAC0A8D006D62A2 /* APIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
+		542A25E42AAC163D006D62A2 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		542A25E52AAC163D006D62A2 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		542A25E72AAC2158006D62A2 /* APIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConstants.h; sourceTree = "<group>"; };
+		542A25E82AAC2158006D62A2 /* APIConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +116,14 @@
 		542A25A42AAC0573006D62A2 /* MovieSearch */ = {
 			isa = PBXGroup;
 			children = (
+				542A25E32AAC1632006D62A2 /* Model */,
+				542A25DF2AAC0A7F006D62A2 /* Service */,
+				542A25DB2AAC0852006D62A2 /* ViewModel */,
+				542A25DA2AAC0848006D62A2 /* ViewController */,
 				542A25A52AAC0573006D62A2 /* AppDelegate.h */,
 				542A25A62AAC0573006D62A2 /* AppDelegate.m */,
 				542A25A82AAC0573006D62A2 /* SceneDelegate.h */,
 				542A25A92AAC0573006D62A2 /* SceneDelegate.m */,
-				542A25AB2AAC0573006D62A2 /* ViewController.h */,
-				542A25AC2AAC0573006D62A2 /* ViewController.m */,
 				542A25AE2AAC0573006D62A2 /* Main.storyboard */,
 				542A25B12AAC0574006D62A2 /* Assets.xcassets */,
 				542A25B32AAC0574006D62A2 /* LaunchScreen.storyboard */,
@@ -134,6 +148,44 @@
 				542A25CD2AAC0575006D62A2 /* MovieSearchUITestsLaunchTests.m */,
 			);
 			path = MovieSearchUITests;
+			sourceTree = "<group>";
+		};
+		542A25DA2AAC0848006D62A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				542A25AB2AAC0573006D62A2 /* MainViewController.h */,
+				542A25AC2AAC0573006D62A2 /* MainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		542A25DB2AAC0852006D62A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				542A25DC2AAC085F006D62A2 /* MainViewModel.h */,
+				542A25DD2AAC085F006D62A2 /* MainViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542A25DF2AAC0A7F006D62A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				542A25E02AAC0A8D006D62A2 /* APIService.h */,
+				542A25E12AAC0A8D006D62A2 /* APIService.m */,
+				542A25E72AAC2158006D62A2 /* APIConstants.h */,
+				542A25E82AAC2158006D62A2 /* APIConstants.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		542A25E32AAC1632006D62A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				542A25E42AAC163D006D62A2 /* Movie.h */,
+				542A25E52AAC163D006D62A2 /* Movie.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542A25AD2AAC0573006D62A2 /* ViewController.m in Sources */,
+				542A25E92AAC2159006D62A2 /* APIConstants.m in Sources */,
+				542A25E22AAC0A8D006D62A2 /* APIService.m in Sources */,
+				542A25AD2AAC0573006D62A2 /* MainViewController.m in Sources */,
+				542A25E62AAC163D006D62A2 /* Movie.m in Sources */,
 				542A25A72AAC0573006D62A2 /* AppDelegate.m in Sources */,
 				542A25B82AAC0574006D62A2 /* main.m in Sources */,
+				542A25DE2AAC085F006D62A2 /* MainViewModel.m in Sources */,
 				542A25AA2AAC0573006D62A2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
